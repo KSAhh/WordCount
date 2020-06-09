@@ -3,10 +3,10 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html.')
+    return render(request, 'home.html')
 
 def about(request):
-    return render(request, 'about.html.')
+    return render(request, 'about.html')
 
 def count(request):
     text = request.GET['fulltext']
@@ -21,7 +21,7 @@ def count(request):
         else:
             word_dic[word] = 1
 
-    return render(request, 'count.html.', {
+    return render(request, 'count.html', {
                                             'length' : len(text_split),
                                             'full' : text_split,
                                             'text' : text,
