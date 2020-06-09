@@ -1,0 +1,1 @@
+web: gunicorn secondprj.wsgi --logofile -
